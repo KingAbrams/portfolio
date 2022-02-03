@@ -1,0 +1,772 @@
+@font-face {
+  font-family: 'Rajdhani Bold';
+  src: url('../public/police/Rajdhani-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Rajdhani Regular';
+  src: url('../public/police/Rajdhani-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Rajdhani Medium';
+  src: url('../public/police/Rajdhani-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Kaushan';
+  src: url('../public/police/KaushanScript-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Red Hat Light';
+  src: url('../public/police/RedHatMono-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Red Hat Bold';
+  src: url('../public/police/RedHatMono-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Lato Light';
+  src: url('../public/police/Lato-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Lato Regular';
+  src: url('../public/police/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Lato Bold';
+  src: url('../public/police/Lato-Bold.ttf');
+}
+
+
+
+.App {
+  
+  font-size: 1.05em;
+  text-align: center;
+}
+
+
+
+/* ------------------------------------------------------- DEBUT DE MON CSS ---------------------------------------------------------------- */
+
+/* ------------------------------------------------------- HEADER ---------------------------------------------------------------- */
+
+.compartiment-header {
+  display: block;
+  width: 100%;
+  height: 400px;
+  background-color: rgb(179, 53, 53);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+nav .logo{font-family: 'Kaushan', 'cursive';
+}
+
+nav ul li .logo-lune {
+  width:1em;
+}
+
+nav ul {
+  font-family: 'Rajdhani Bold', 'cursive';
+  display: flex;
+  align-items: center;
+  
+}
+
+nav ul li {
+  list-style: none;
+  margin-right: 20px;
+  color: #023047;
+}
+
+h1{
+  font-family: 'Red Hat Bold';
+  color: #ffb703;
+}
+
+/* ------------------------------------------------------- Accueil ---------------------------------------------------------------- */
+
+.compartiment-accueil {
+  position: relative;
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  width: 85%;
+  margin: 110px auto;
+  align-items: center;
+
+}
+
+
+
+.compartiment-accueil .accueil-left h1{
+  text-align: left;
+  margin-bottom: 0;
+  font-family: 'Red Hat Bold';
+  color: #ffb703;
+}
+
+.compartiment-accueil .accueil-left h4{
+  margin-top: 0px;
+  text-align: left;
+  font-family: 'Red Hat Light';
+  color: #023047;
+}
+
+.compartiment-accueil .accueil-left .introAccueil{
+  font-family: 'Lato Regular';
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-align: justify;
+  width: 70%;
+  color: #343a40;
+  padding: 10px auto;
+  line-height: 1.5rem;
+}
+/* --------------BTN------------------- */
+
+.btn-envoyer{
+  border: none;
+  background-color: #023047;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px #414242;
+  
+}
+
+.btn-envoyer:hover {
+  background-color: #023047f3;
+}
+
+.btn-btn-envoyer .img-btn{
+  width: 1.2rem;
+}
+
+.btn-btn-envoyer{
+  display: grid;
+  grid-template-columns: 6.5fr 2fr;
+  column-gap: 2px;
+  justify-items: center;
+  align-items: center
+}
+
+.btn-btn-envoyer p {
+  /* text-align: end; */
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: 'Rajdhani Regular' ;
+}
+
+
+/* .btn-envoyer {
+  font-family: 'Rajdhani Regular';
+  background-color: #023047;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: .75rem 1rem;
+  border: none;
+  border-radius: .5rem;
+  transition: .5s;
+  box-shadow: 2px 2px 3px #414242;
+}
+
+.btn-envoyer:hover {
+  background-color: #343a40;
+}
+
+.btn-envoyer:hover img {
+  transform: rotate(-90deg);
+}
+
+.btn-envoyer div {
+  margin: 0 .5rem;
+}
+
+.btn-envoyer div:first-child {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.btn-envoyer div:last-child img {
+  width: 1.5rem;
+  transition: .5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+/* --------------------------------- */
+
+/* .compartiment-accueil .accueil-left .bouton-envoyer{
+  position: relative;
+  width: 1rem;
+  
+} */
+
+.compartiment-accueil .accueil-right img{
+  width: 300px;
+  
+}
+
+.photobro {
+  transition: .5s;
+}
+
+.photobro:hover {
+  transform: translateX(4rem);
+  
+}
+
+/* ------------------------------------------------------- A propos ---------------------------------------------------------------- */
+
+.compartiment-apropos {
+  display: inline-block;
+  width: 100%;
+  margin: 50px auto;
+  
+  /* background-color: green; */
+}
+
+
+.ca-contenu{
+  margin: auto;
+  width: 500px;
+}
+
+.ca-contenu .phraseApropos{
+  font-family: 'Lato Regular';
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-align: justify;
+  color: #343a40;
+  line-height: 1.5rem;
+}
+
+.experience{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  
+  justify-content: space-evenly;
+}
+
+.anneeExp{
+  width: 100px;
+}
+
+.anneeExp .nombre {
+  font-family: 'Lato bold';
+  font-size: 2rem;
+  color: #219ebc;
+}
+
+.anneeExp .libelle {
+  font-family: 'Lato Regular';
+  color: #343a40;
+
+}
+
+.libelle{
+  margin: 0px 20px 20px 20px;
+}
+
+/* ------------------------------------------------------- Competences ---------------------------------------------------------------- */
+
+
+.compartiment-competences {
+  display: inline-block;
+  width: 100%;
+  margin: 50px auto;
+}
+
+/* .container-carte{
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+} */
+
+.container-carte{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  justify-content: space-evenly;
+  column-gap: 20px;
+}
+
+.carte-front, .carte-back, .carte-design{
+  width: 300px;
+  margin: 20px 10px 20px 10px;
+}
+
+.titreCarte{
+  display: flex;
+  font-family: "Red Hat Bold";
+  color: #023047;
+  font-size: 1.3rem;
+}
+
+.titreCarte p {
+  margin: 0 auto ;
+  text-align: left;
+  font-family: 'Red Hat Light';
+}
+
+.logo-comp{
+  width: 2rem;
+  margin-right: 8px;
+  margin-top: 5px;
+}
+
+.skill{
+  width: 100%;
+  max-width: 300px;
+  /* padding: 0 20px; */
+}
+
+.skill-name{
+  font-size: 1rem;
+  margin: 10px 0 5px 0;
+  text-align: left;
+}
+
+.skill-bar{
+  height: 10px;
+  background: #00000038;
+  border-radius: 5px;
+}
+
+.skill-per{
+  height: 10px;
+  background: #ffb703;
+  border-radius: 5px;
+  position: relative;
+  animation: fillBars 2s 1;
+}
+
+@keyframes fillBars {
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+}
+
+
+/* ------------------------------------------------------- Realisation ---------------------------------------------------------------- */
+
+
+.compartiment-realisations {
+  width: 100%;
+  display: inline-block;
+  margin: 50px auto;
+}
+
+.mySwiper{
+  width: 75%;
+}
+
+.cadre{
+  max-width: 1920px;
+  width: 65%;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  
+
+}
+
+.imag-recap{
+  display: inline;
+}
+
+ .contenu-image{
+  width: 480px;
+  height: 320px;
+  border-radius: 10px;
+  background: #343a40;
+  
+}
+
+.recapitulatif{
+  font-family: 'Lato Regular';
+  text-align: justify;
+  width: 250px;
+  margin-left: 35px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #343a40;
+  line-height: 1.5rem;
+
+}
+
+/* ------------------------------------------------------- Contact ---------------------------------------------------------------- */
+
+.comp-contact{
+  display: inline-block;
+  margin: 50px auto;
+}
+.compartiment-contact {
+  
+  display: grid;
+  width: 85%;
+  margin: auto;
+
+  grid-template-columns: 2fr 4fr;
+  gap: 50px;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+}
+
+.MyInfo{
+  display: grid;
+}
+
+.iconEtContenu-Téléphone, .iconEtContenu-Email,
+.iconEtContenu-Adresse {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.titre-label{
+  font-family: 'Red Hat Light';
+}
+
+.contenu-label{
+  font-family: 'Rajdhani Bold';
+  color: #023047;
+}
+
+.icon-Téléphone, .icon-Email, .icon-Adresse {
+  width: 2rem;
+  margin-right: 5px;
+}
+
+.phone-contenu{
+  text-align: left;
+}
+
+.MeContacter{
+  background: #02304752;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  border-radius: 16px;
+  justify-items: start;
+  text-align: left;
+}
+
+.nom {
+  background: white;
+  height: 54px;
+  border-radius: 6px;
+
+  width: 100%;
+}
+#nom, #email, #projet, #message{
+  width: calc(100% - 13px);
+  border: none;
+  margin-left: 5px;
+}
+
+#nom, #email, #projet, #message:focus{
+  outline: none;
+  font-size: 1rem;
+  font-family: 'Lato Regular';
+}
+
+#projet{
+  font-family: 'Lato Bold';
+}
+
+#message{
+  font-family: 'Lato Regular';
+  font-size: 1rem;
+}
+
+.MeContacter label {
+  margin-left: 5px;
+  font-size: .9rem;
+  font-family: 'Red Hat Light';
+}
+
+.email{
+  background: white;
+  height: 54px;
+  border-radius: 6px;
+
+  grid-column: span 2;
+  width: 100%;
+}
+
+.projet{
+  background: white;
+  height: 54px;
+  border-radius: 6px;
+
+  grid-column: 1/4;
+  width: 100%;
+}
+
+.message{
+  background: white;
+  border-radius: 6px;
+
+  grid-column: 1/4;
+  width: 100%;
+}
+
+.message textarea {
+  resize: none;
+}
+
+
+.btnSendMsg{
+  grid-column: span 3;
+  width: 100%;
+}
+
+
+/* ------------------------------------------------------- Footer ---------------------------------------------------------------- */
+
+.compartiment-footer {
+  margin-top: 200px;
+  width: 100%;
+  background-color: #023047;
+}
+
+.logo-reseau{
+  width: 175px;
+  margin-top: 16px;
+  margin-right: 5%;
+}
+
+.logoAndContenu {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  justify-items: start;
+}
+
+.logoAndContenu p {
+  font-family: 'Lato Light';
+  font-size: .80rem;
+  color: #ffffff;
+}
+
+.logoAndContenu a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logo-reseau{
+  position: relative;
+  float: right;
+}
+
+
+.copyright{
+  position: relative;
+  padding-top: 150px;
+  font-family: 'Red Hat Light';
+  font-size: .7rem;
+  color: #ffffff;
+  padding-bottom: 20px;
+  
+}
+
+.logo-ic{
+  width: 2rem;
+  margin: 0px 0px;
+}
+
+
+/* ------------------------------------------------------- Taille ecran ---------------------------------------------------------------- */
+
+@media screen and (max-width: 1200px) {
+  .mySwiper{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  /* ------------------ ACCUEIL ------------------ */
+
+  .compartiment-accueil .accueil-right img{
+    width: 270px;
+    
+  }
+  .introAccueil{
+    width: 90%;
+    
+  }
+
+  /* ------------------ COMPETENCE ------------------ */
+  .container-carte{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    
+  }
+  .carte-front{
+    grid-row: span 2;
+  }
+
+  
+
+  /* ------------------ REALISATION ------------------ */
+  .cadre{
+    grid-template-columns: 4fr ;
+    /* padding: 50px 0; */
+    row-gap: 30px;
+
+  }  
+  
+
+  .recapitulatif {
+    order: 1;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin:auto;
+
+  }
+
+  .contenu-image {
+    order: 2;
+    grid-column: span 2;
+    justify-self: center;
+  }
+
+  /* ------------------ CONTACT ------------------ */
+
+  .MeContacter{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0px;
+  }
+
+  .nom {
+    grid-column: 1/3;
+  }
+
+  /* ------------------ FOOTER ------------------ */
+  .logo-reseau{
+    width: 100%;
+    margin-top: 16px;
+    margin-right: 0;
+    display: flex;
+
+  }
+  .logoAndContenu{
+    margin: 0 auto;
+    /* height: 122px */
+    width: 150px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+
+  /* ------------------ ACCUEIL ------------------ */
+
+  .compartiment-accueil {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    width: 85%;
+    margin: 110px auto;
+    align-items: center;
+  
+  }
+  .compartiment-accueil .accueil-left h1,
+  .compartiment-accueil .accueil-left h4 {
+    text-align: center;
+  }
+  .compartiment-accueil .accueil-left h4{
+    margin: 0;
+  }
+  .introAccueil{
+    width: 100%;
+    margin: 25px auto;
+    
+  }
+
+  /* ------------------ APROPOS ------------------ */
+  .compartiment-apropos{
+    margin-top: 0PX;
+  }
+
+  .ca-contenu{
+    width: 70%;
+  }
+
+  /* ------------------ COMPETENCES  ------------------ */
+  .container-carte{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    row-gap: 30px;
+  }
+
+  .carte-front{
+    grid-row: span 1;
+  }
+
+  /* ----------------------------------------------------- */
+  .mySwiper{
+    width: 95%;
+  }
+
+  .MyInfo{
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+  }
+
+  .iconEtContenu-Adresse{
+    order: 2;
+    grid-row: span 2;
+    padding: 0 0;
+  }
+
+  .iconEtContenu-Email{
+    order: 3;
+    padding: 0 0;
+  }
+  .iconEtContenu-Téléphone{
+    padding: 0 0;
+  }
+
+  .compartiment-contact {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .MyInfo{
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+  .icon-Téléphone, .icon-Email, .icon-Adresse{
+    padding-left: 40px;
+  }
+  
+}
