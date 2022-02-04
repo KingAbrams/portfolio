@@ -23,7 +23,7 @@ function Apropos() {
     <div className='compartiment-apropos'>
           <TitreH1 texte='A propos de moi' />
           <div className='ca-contenu'>
-            <p className='phraseApropos'>Jeune etudiant venant de Tamatave, je suis actuellement en Master 1 à 
+            <p className='phraseApropos'>Jeune étudiant venant de Tamatave, je suis actuellement en Master 1 à 
             l'Ecole Nationale d'Informatique de Fianarantsoa suivant le parcours "Génie Logiciel et base de données".<br/> 
             Attiré par le développement web, je ne cesse d'aiguiser mes compétences pour rendre 
             l'expérience utilisateur la plus satisfaisante possible lors de son interaction avec mes sites ou applications.

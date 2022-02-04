@@ -18,7 +18,7 @@ function Competences() {
   
   return (
     <div className='compartiment-competences'>
-        <TitreH1 texte="Competences"/>
+        <TitreH1 texte="Compétences"/>
         <div className='container-carte'>
           <Carte titreCarte="Frontend Developer" icon={chevron} data={frontEnd}/>
           <Carte titreCarte="Backend Developer" icon={server} data={BackEnd}/>

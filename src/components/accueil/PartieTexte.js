@@ -7,7 +7,7 @@ function PartieTexte() {
   return (
     <div className="accueil-left">
       <h1>Hey, moi c'est Hannael</h1>
-      <h4>Developpeur Fullstack</h4>
+      <h4>Développeur Fullstack</h4>
       <p className='introAccueil'>Jeune étudiant passionné par le developpement Web,
         Jeune étudiant passionné par le developpement Web,
         Jeune étudiant passionné par le developpement Web

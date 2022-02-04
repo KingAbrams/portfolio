@@ -5,7 +5,7 @@ import TitreH1 from "../TitreH1";
 function Contact() {
   return (
     <div className="comp-contact">
-      <TitreH1 texte='Realisation'/>
+      <TitreH1 texte='Contact'/>
       <div className='compartiment-contact'>
           <MyInfo />
           <MeContacter />

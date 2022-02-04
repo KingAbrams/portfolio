@@ -19,7 +19,7 @@ function Realisation() {
   return (
     <>
       <div className='compartiment-realisations'>
-        <TitreH1 texte='Realisation'/>
+        <TitreH1 texte='Réalisation'/>
           <Swiper slidesPerView={1} spaceBetween={30} pagination={{ clickable: true, }}
             navigation={true} modules={[Pagination, Navigation]} className="mySwiper" >
             <SwiperSlide>

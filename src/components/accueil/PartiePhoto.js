@@ -6,6 +6,7 @@ function PartiePhoto() {
     <div className="accueil-right">
         <img src={photoProfil} alt="photoProfil" className='photobro'/>
     </div>
+
   );
 }
 

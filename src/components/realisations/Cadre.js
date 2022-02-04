@@ -11,7 +11,7 @@ function Cadre() {
       </div>
       <div className='recapitulatif'>
           <h3>Application</h3>
-          <p>Conception et realisation d'une application de gestion de menage inter-arrondissement</p>
+          <p>Conception et réalisation d'une application de gestion de menage inter-arrondissement</p>
       </div>
         
         

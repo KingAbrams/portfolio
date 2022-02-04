@@ -49,6 +49,10 @@
   
   font-size: 1.05em;
   text-align: center;
+  /* height: 75vh;
+  width: 100%;
+  z-index: -1; */
+  /* background-color: blue; */
 }
 
 
@@ -56,6 +60,11 @@
 /* ------------------------------------------------------- DEBUT DE MON CSS ---------------------------------------------------------------- */
 
 /* ------------------------------------------------------- HEADER ---------------------------------------------------------------- */
+
+/* .premier-plan{
+  background: red;
+  z-index: 3;
+} */
 
 .compartiment-header {
   display: block;
@@ -75,6 +84,11 @@ nav .logo{font-family: 'Kaushan', 'cursive';
 
 nav ul li .logo-lune {
   width:1em;
+}
+
+nav ul li .logo-ico{
+  width: 1.2rem;
+  display: none;
 }
 
 nav ul {
@@ -97,15 +111,21 @@ h1{
 
 /* ------------------------------------------------------- Accueil ---------------------------------------------------------------- */
 
+
 .compartiment-accueil {
   position: relative;
   display: grid;
   grid-template-columns: 8fr 4fr;
   width: 85%;
   margin: 110px auto;
+  margin-bottom: 0px;
   align-items: center;
 
 }
+
+/* .photo-compartiment-accueil{
+  width: 100%;
+} */
 
 
 
@@ -316,6 +336,7 @@ h1{
   font-family: "Red Hat Bold";
   color: #023047;
   font-size: 1.3rem;
+  align-items: center;
 }
 
 .titreCarte p {
@@ -382,7 +403,7 @@ h1{
 .cadre{
   max-width: 1920px;
   width: 65%;
-  margin: 100px auto;
+  margin: 60px auto;
   display: grid;
   grid-template-columns: 4fr 3fr;
   align-items: center;
@@ -426,7 +447,7 @@ h1{
   
   display: grid;
   width: 85%;
-  margin: auto;
+  margin: 70px auto;
 
   grid-template-columns: 2fr 4fr;
   gap: 50px;
@@ -565,16 +586,12 @@ h1{
   grid-template-columns: 1fr 3fr;
   align-items: center;
   justify-items: start;
+  text-decoration: none;
 }
 
 .logoAndContenu p {
   font-family: 'Lato Light';
   font-size: .80rem;
-  color: #ffffff;
-}
-
-.logoAndContenu a {
-  text-decoration: none;
   color: #ffffff;
 }
 
@@ -611,6 +628,10 @@ h1{
 @media screen and (max-width: 1024px) {
 
   /* ------------------ ACCUEIL ------------------ */
+
+  .compartiment-accueil{
+    margin-bottom: 0px;
+  }
 
   .compartiment-accueil .accueil-right img{
     width: 270px;
@@ -685,7 +706,7 @@ h1{
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 822px) {
 
   /* ------------------ ACCUEIL ------------------ */
 
@@ -695,45 +716,67 @@ h1{
     width: 85%;
     margin: 110px auto;
     align-items: center;
+    margin-bottom: 0px;
   
   }
   .compartiment-accueil .accueil-left h1,
   .compartiment-accueil .accueil-left h4 {
     text-align: center;
   }
-  .compartiment-accueil .accueil-left h4{
-    margin: 0;
-  }
-  .introAccueil{
+
+  .compartiment-accueil .accueil-left .introAccueil{
+    text-align: center;
     width: 100%;
-    margin: 25px auto;
+    padding: 10px auto;
+    line-height: 1.5rem;
+  }
+
+  .compartiment-accueil .accueil-right img{
+    width: 260px;
     
   }
 
   /* ------------------ APROPOS ------------------ */
   .compartiment-apropos{
-    margin-top: 0PX;
+    margin-top: 0px;
+    width: 85%;
   }
 
   .ca-contenu{
-    width: 70%;
+    width: 100%;
+  }
+  .ca-contenu .phraseApropos{
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 0 10px;
   }
 
+
   /* ------------------ COMPETENCES  ------------------ */
-  .container-carte{
+  /* .container-carte{
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     row-gap: 30px;
   }
-
+  
   .carte-front{
     grid-row: span 1;
+  } */
+  .container-carte{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0px 60px;
+    
+  }
+  .carte-front{
+    grid-row: span 2;
   }
 
   /* ----------------------------------------------------- */
   .mySwiper{
-    width: 95%;
+    width: 85%;
   }
 
   .MyInfo{
@@ -758,7 +801,17 @@ h1{
   .compartiment-contact {
     grid-template-columns: 1fr;
   }
+
+  /* -----------------FOOTER---------------------------- */
+  .logo-reseau{
+    display: flex;
+    justify-content: center;
+  }
+
+
 }
+
+
 
 @media screen and (max-width: 680px) {
   .MyInfo{
@@ -769,4 +822,143 @@ h1{
     padding-left: 40px;
   }
   
+}
+
+
+@media screen and (max-width: 450px) {
+
+  /* ------------------TOP BAR-------------------- */
+
+  nav ul li .titreico{
+    display: none;
+    color: red;
+  }
+  
+  nav ul li .logo-ico{
+    display: initial;
+  }
+
+  h1{
+    font-size: 1.5rem;
+  }
+
+  .compartiment-accueil .accueil-right img{
+    width: 220px;
+    
+  }
+
+  /* -----------------APROPOS ------------- */
+
+  .ca-contenu .phraseApropos{
+    text-align: center;
+    color: #343a40;
+    line-height: 1.5rem;
+  }
+
+  .experience{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .anneeExp{
+    margin-bottom: 20px;
+  }
+
+  .libelle{
+    margin: 0;
+    /* margin-bottom: 10px; */
+    
+  }
+
+  /* ------------------COMPETENCES-------------------- */
+
+  .container-carte{
+    grid-template-columns: 1fr;
+    
+  }
+
+  .titreCarte p {
+    color: #219ebc;
+  }
+
+  .skill{
+    width: 250px;
+    margin: auto;
+  }
+  .titreCarte{
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ------------- REALISATION-------------- */
+
+  /* .compartiment-realisations {
+    width: 80%;
+  } */
+  .mySwiper{
+    width: 100%;
+  }
+
+  .recapitulatif{
+    width: 70%;
+  
+  }
+  .contenu-image{
+    width: 320px;
+    height: 280px;
+    
+  }
+
+  
+  
+
+  /* ------------------FOOTER-------------------- */
+  .logoAndContenu{
+    width: 122px;
+    grid-template-columns: 1fr 2fr;
+  }
+  .logoAndContenu p{
+    font-size: .7rem;
+    text-align: left;
+  }
+
+  .copyright{
+    font-size: .5rem;
+    
+  }
+
+  .logo-ic{
+    width: 1.5rem;
+    margin: 0px 0px;
+  }
+
+  .logo-reseau{
+    display: inline;
+    margin-bottom: 50px;
+  }
+  
+}
+
+@media screen and (max-width: 380px) {
+
+  /* ------------- REALISATION-------------- */
+
+  /* .compartiment-realisations {
+    width: 80%;
+  } */
+  .mySwiper{
+    width: 100%;
+  }
+
+  .recapitulatif{
+    width: 80%;
+  
+  }
+  .contenu-image{
+    width: 280px;
+    height: 280px;
+    
+  }
 }

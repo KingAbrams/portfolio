@@ -9,18 +9,21 @@ import Realisation from './components/realisations/Realisation';
 import Contact from './components/contact/Contact';
 import Footer from './components/bottombar/Footer';
 
+
+
 function App() {
 
   return (
 
     <div className="App">
-      <Header />
-      <Accueil />
-      <Apropos />
-      <Competences />
-      <Realisation />
-      <Contact />
-      <Footer />
+        <Header />
+        <Accueil />
+        <Apropos />
+        <Competences />
+        <Realisation />
+        <Contact />
+        <Footer />
+        
     </div>
 
   );
