@@ -1,6 +1,6 @@
 import React from 'react';
 import lune from '../../icon/lune.svg'
-import main from '../../icon/poignee-de-main.gif'
+// import main from '../../icon/poignee-de-main.gif'
 import bavarder from '../../icon/bavarder.png'
 import avatar from '../../icon/avatar.png'
 import skills from '../../icon/skills.png'
