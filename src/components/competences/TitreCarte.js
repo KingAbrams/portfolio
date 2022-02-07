@@ -9,6 +9,7 @@ function TitreCarte({logo, intitule}) {
           </div>
           <div>
               {intitule}
+              <p>1 an</p>
           </div>
       </div>
     );

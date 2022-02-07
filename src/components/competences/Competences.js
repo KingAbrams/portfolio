@@ -17,7 +17,7 @@ function Competences() {
   const Designer = [{nom: "Adobe illustrator", pourcentage:"52%"}]
   
   return (
-    <div className='compartiment-competences'>
+    <div className='compartiment-competences' id='competence'>
         <TitreH1 texte="Compétences"/>
         <div className='container-carte'>
           <Carte titreCarte="Frontend Developer" icon={chevron} data={frontEnd}/>

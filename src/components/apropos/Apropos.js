@@ -4,6 +4,8 @@ import AnneeExperience from './AnneeExperience';
 import Button from '../Button';
 import btntelecharger from '../../icon/telecharger.svg'
 
+
+
 // import Lottie from 'react-lottie';
 // import animationData from '../../lotties/kiss-of-the-heart.json';
 
@@ -20,7 +22,8 @@ function Apropos() {
 
 
   return (
-    <div className='compartiment-apropos'>
+    <div className='image-arriere'>
+      <div className='compartiment-apropos' id='apropos'>
           <TitreH1 texte='A propos de moi' />
           <div className='ca-contenu'>
             <p className='phraseApropos'>Jeune étudiant venant de Tamatave, je suis actuellement en Master 1 à 
@@ -45,6 +48,7 @@ function Apropos() {
           /> */}
         </div>
 
+    </div>
     </div>
   );
 }

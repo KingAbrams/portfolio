@@ -16,8 +16,11 @@ function App() {
   return (
 
     <div className="App">
-        <Header />
-        <Accueil />
+        <div className='premierepage'>
+          {/* <img src={courbe} alt="courbe" className='fond-curvy' /> */}
+          <Header />
+          <Accueil />
+        </div>
         <Apropos />
         <Competences />
         <Realisation />

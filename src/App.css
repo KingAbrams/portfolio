@@ -49,6 +49,7 @@
   
   font-size: 1.05em;
   text-align: center;
+  
   /* height: 75vh;
   width: 100%;
   z-index: -1; */
@@ -103,14 +104,41 @@ nav ul li {
   margin-right: 20px;
   color: #023047;
 }
+nav ul a{
+  text-decoration : none;
+  color: #023047;
+}
+nav ul a:visited{
+  color: #023047;
+}
 
 h1{
   font-family: 'Red Hat Bold';
   color: #ffb703;
 }
 
-/* ------------------------------------------------------- Accueil ---------------------------------------------------------------- */
 
+
+/* ------------------------------------------------------- Accueil ---------------------------------------------------------------- */
+/* .premierepage{
+  background: url('./image/courbe2.svg');
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+} */
+
+/* .premierepage{
+  height: 55vh;
+  width: 100%;
+  background: #219ebc;
+} */
+
+/* .fond-curvy{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 5%;
+} */
 
 .compartiment-accueil {
   position: relative;
@@ -120,6 +148,10 @@ h1{
   margin: 110px auto;
   margin-bottom: 0px;
   align-items: center;
+  /* background: url('./image/hautgauche.svg');
+  background-repeat: no-repeat;
+  background-size: cover; */
+  
 
 }
 
@@ -171,7 +203,11 @@ h1{
   width: 1.2rem;
 }
 
-.btn-btn-envoyer{
+.btn-btn-envoyer-pdf{
+  text-decoration: none;
+}
+
+.btn-btn-envoyer, .btn-btn-envoyer-pdf{
   display: grid;
   grid-template-columns: 6.5fr 2fr;
   column-gap: 2px;
@@ -179,7 +215,7 @@ h1{
   align-items: center
 }
 
-.btn-btn-envoyer p {
+.btn-btn-envoyer p,  .btn-btn-envoyer-pdf p{
   /* text-align: end; */
   color: #ffffff;
   font-size: 1rem;
@@ -239,21 +275,36 @@ h1{
   
 }
 
-.photobro {
+/* .photobro {
+  border: 10px solid white;
+} */
+
+/* .photobro {
   transition: .5s;
 }
 
 .photobro:hover {
   transform: translateX(4rem);
   
-}
+} */
 
 /* ------------------------------------------------------- A propos ---------------------------------------------------------------- */
 
+/* .image-arriere{
+  background: url('./image/centre6.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 800px;
+  
+
+} */
+
 .compartiment-apropos {
   display: inline-block;
-  width: 100%;
+  width: 90%;
   margin: 50px auto;
+
   
   /* background-color: green; */
 }
@@ -261,7 +312,7 @@ h1{
 
 .ca-contenu{
   margin: auto;
-  width: 500px;
+  width: 50%;
 }
 
 .ca-contenu .phraseApropos{
@@ -307,7 +358,7 @@ h1{
 
 .compartiment-competences {
   display: inline-block;
-  width: 100%;
+  width: 80%;
   margin: 50px auto;
 }
 
@@ -453,6 +504,8 @@ h1{
   gap: 50px;
   background-color: rgb(255, 255, 255);
   align-items: center;
+
+ 
 }
 
 .MyInfo{
@@ -490,10 +543,28 @@ h1{
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  column-gap: 20px;
+  row-gap: 25px;
   border-radius: 16px;
   justify-items: start;
   text-align: left;
+  transition: 0.2s ease-in-out;
+  
+}
+.MeContacter:hover {
+  box-shadow: 0px 8px 5px 2px rgb(0, 0, 0, 0.3);
+  transform: scale(1.01);
+}
+
+.contenuInput{
+margin-bottom: 5px;
+}
+
+.MeContacter span {
+  font-family: 'Lato Bold';
+  font-size: .6rem;
+  margin-left: 5px;
+  color: rgb(216, 55, 55);
 }
 
 .nom {
@@ -566,6 +637,15 @@ h1{
   width: 100%;
 }
 
+.btnvershaut{
+  height: 40px;
+  /* width: 100px; */
+  display: flex;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+
 
 /* ------------------------------------------------------- Footer ---------------------------------------------------------------- */
 
@@ -587,6 +667,10 @@ h1{
   align-items: center;
   justify-items: start;
   text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+.logoAndContenu:hover {
+  transform: scale(1.1);
 }
 
 .logoAndContenu p {
@@ -602,7 +686,6 @@ h1{
 
 
 .copyright{
-  position: relative;
   padding-top: 150px;
   font-family: 'Red Hat Light';
   font-size: .7rem;
@@ -696,6 +779,7 @@ h1{
     margin-top: 16px;
     margin-right: 0;
     display: flex;
+    justify-content: center;
 
   }
   .logoAndContenu{
@@ -707,8 +791,17 @@ h1{
 }
 
 @media screen and (max-width: 822px) {
+  /* --------HEADER---------------- */
+  
 
   /* ------------------ ACCUEIL ------------------ */
+
+  .premierepage{
+    background: url('./image/courbe2.svg');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+  }
 
   .compartiment-accueil {
     grid-template-columns: 1fr;
@@ -729,6 +822,7 @@ h1{
     width: 100%;
     padding: 10px auto;
     line-height: 1.5rem;
+    color: #ffffff;
   }
 
   .compartiment-accueil .accueil-right img{
@@ -814,6 +908,29 @@ h1{
 
 
 @media screen and (max-width: 680px) {
+
+  /* ----------------COMPETENCE----------------------------- */
+  .container-carte{
+    grid-template-columns: 1fr;
+    
+  }
+
+  /* ---------------REALISATION--------------------- */
+  .mySwiper{
+    width: 90%;
+  }
+
+  .recapitulatif{
+    width: 70%;
+  
+  }
+  .contenu-image{
+    width: 450px;
+    height: 300px;
+    
+  }
+
+  /* ---------------------------------------------------------- */
   .MyInfo{
     grid-template-columns: 1fr;
     row-gap: 20px;
@@ -824,19 +941,44 @@ h1{
   
 }
 
-
-@media screen and (max-width: 450px) {
-
-  /* ------------------TOP BAR-------------------- */
-
+@media screen and (max-width: 590px) {
+  /* ---------------TOP BAR----------------- */
   nav ul li .titreico{
     display: none;
-    color: red;
   }
   
   nav ul li .logo-ico{
     display: initial;
   }
+
+  /* ---------------ACCEUIL -------------- */
+  /* .premierepage{
+    height: 80vh;
+    width: 100%;
+    background: red;
+  } */
+
+  /* ------------------ REALISATION ----------- */
+  .mySwiper{
+    width: 100%;
+  }
+
+  .recapitulatif{
+    width: 70%;
+  
+  }
+  .contenu-image{
+    width: 370px;
+    height: 280px;
+    
+  }
+
+}
+
+
+@media screen and (max-width: 450px) {
+
+  /* ------------------TOP BAR-------------------- */
 
   h1{
     font-size: 1.5rem;

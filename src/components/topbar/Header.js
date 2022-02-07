@@ -21,30 +21,30 @@ function Header() {
               </li>
 
               <li>
-                <div className='titreico'>A propos</div>
+                <div className='titreico'><a href="#apropos">A propos</a></div>
                 <div>
-                  <img src={user} alt="main" className='logo-ico' />
+                  <a href="#apropos"><img src={user} alt="main" className='logo-ico' /></a>
                 </div>
               </li>
 
               <li>
-                <div className='titreico'>Compétences</div>
+                <div className='titreico'><a href="#competence">Compétences</a></div>
                 <div>
-                  <img src={skills} alt="main" className='logo-ico' />
+                  <a href="#competence"><img src={skills} alt="main" className='logo-ico' /></a>
                 </div>
               </li>
 
               <li>
-                <div className='titreico'>Réalisation</div>
+                <div className='titreico'><a href="#realisation">Réalisation</a></div>
                 <div>
-                  <img src={monitor} alt="main" className='logo-ico' />
+                  <a href="#realisation"><img src={monitor} alt="main" className='logo-ico' /></a>
                 </div>
               </li>
 
               <li>
-                <div className='titreico'>Contacter</div>
+                <div className='titreico'><a href="#contact">Contacter</a></div>
                 <div>
-                  <img src={bavarder} alt="main" className='logo-ico' />
+                  <a href="#contact"><img src={bavarder} alt="main" className='logo-ico' /></a>
                 </div>
                 </li>
 
