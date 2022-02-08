@@ -1,5 +1,5 @@
 import React from 'react';
-import photoProfil from '../../image/maphoto.png'
+import photoProfil from '../../image/maphoto2.png'
 
 function PartiePhoto() {
   return (

@@ -15,9 +15,9 @@ function Contact() {
 
   return (
     <div className="comp-contact" id="contact">
-      <div className="btnvershaut" onClick={basculerTop}>
+      {/* <div className="btnvershaut" onClick={basculerTop}>
         <img src={arrowUp} alt="fleche-haut" />
-      </div>
+      </div> */}
       <TitreH1 texte='Contact'/>
       <div className='compartiment-contact'>
           <MyInfo />

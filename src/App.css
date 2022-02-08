@@ -637,14 +637,16 @@ margin-bottom: 5px;
   width: 100%;
 }
 
-.btnvershaut{
+/* -------- basculer vers le haut ------- */
+/* .btnvershaut{
   height: 40px;
-  /* width: 100px; */
+ 
   display: flex;
   position: fixed;
   right: 30px;
   bottom: 30px;
-}
+} */
+ /* width: 100px; */
 
 
 /* ------------------------------------------------------- Footer ---------------------------------------------------------------- */
