@@ -120,20 +120,26 @@ h1{
 
 
 /* ------------------------------------------------------- Accueil ---------------------------------------------------------------- */
-/* .premierepage{
-  background: url('./image/courbe2.svg');
+/* ------------TOAST ------------ */
+
+.Toastify__toast-body{
+  font-family: 'Rajdhani Regular';
+  color: #023047;
+}
+
+
+/* -------------------------------------- */
+.premierepage{
+  background: url('./image/courbe4.svg');
   background-repeat: no-repeat;
   width: 100%;
+  height: 650px;
   background-size: cover;
-} */
+  
+}
 
-/* .premierepage{
-  height: 55vh;
-  width: 100%;
-  background: #219ebc;
-} */
-
-/* .fond-curvy{
+/* 
+.fond-curvy{
   width: 100%;
   position: absolute;
   left: 0;
@@ -151,15 +157,8 @@ h1{
   /* background: url('./image/hautgauche.svg');
   background-repeat: no-repeat;
   background-size: cover; */
-  
 
 }
-
-/* .photo-compartiment-accueil{
-  width: 100%;
-} */
-
-
 
 .compartiment-accueil .accueil-left h1{
   text-align: left;
@@ -180,11 +179,15 @@ h1{
   font-size: 1rem;
   letter-spacing: 1px;
   text-align: justify;
-  width: 70%;
-  color: #343a40;
+  width: 90%;
+  /* color: #343a40; */
+  color: #ffffff;
   padding: 10px auto;
   line-height: 1.5rem;
 }
+
+
+
 /* --------------BTN------------------- */
 
 .btn-envoyer{
@@ -223,70 +226,11 @@ h1{
 }
 
 
-/* .btn-envoyer {
-  font-family: 'Rajdhani Regular';
-  background-color: #023047;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  padding: .75rem 1rem;
-  border: none;
-  border-radius: .5rem;
-  transition: .5s;
-  box-shadow: 2px 2px 3px #414242;
-}
-
-.btn-envoyer:hover {
-  background-color: #343a40;
-}
-
-.btn-envoyer:hover img {
-  transform: rotate(-90deg);
-}
-
-.btn-envoyer div {
-  margin: 0 .5rem;
-}
-
-.btn-envoyer div:first-child {
-  font-size: 1rem;
-  color: #ffffff;
-}
-
-.btn-envoyer div:last-child img {
-  width: 1.5rem;
-  transition: .5s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-/* --------------------------------- */
-
-/* .compartiment-accueil .accueil-left .bouton-envoyer{
-  position: relative;
-  width: 1rem;
-  
-} */
 
 .compartiment-accueil .accueil-right img{
   width: 300px;
   
 }
-
-/* .photobro {
-  border: 10px solid white;
-} */
-
-/* .photobro {
-  transition: .5s;
-}
-
-.photobro:hover {
-  transform: translateX(4rem);
-  
-} */
 
 /* ------------------------------------------------------- A propos ---------------------------------------------------------------- */
 
@@ -304,6 +248,7 @@ h1{
   display: inline-block;
   width: 90%;
   margin: 50px auto;
+  margin-top: 0;
 
   
   /* background-color: green; */
@@ -326,7 +271,7 @@ h1{
 
 .experience{
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   
@@ -350,7 +295,18 @@ h1{
 }
 
 .libelle{
-  margin: 0px 20px 20px 20px;
+  margin: 0px;
+}
+/* ------CONTENU AVEC LOTTIES------ */
+
+.contenuwithLottie{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.niveau{
+  font-family: 'Lato Bold';
+  color: #023047;
 }
 
 /* ------------------------------------------------------- Competences ---------------------------------------------------------------- */
@@ -375,6 +331,9 @@ h1{
   justify-items: center;
   justify-content: space-evenly;
   column-gap: 20px;
+}
+.lottie{
+  grid-row: span 2;
 }
 
 .carte-front, .carte-back, .carte-design{
@@ -497,10 +456,10 @@ h1{
 .compartiment-contact {
   
   display: grid;
-  width: 85%;
+  width: 75%;
   margin: 70px auto;
 
-  grid-template-columns: 2fr 4fr;
+  grid-template-columns: 2fr 3fr;
   gap: 50px;
   background-color: rgb(255, 255, 255);
   align-items: center;
@@ -532,6 +491,10 @@ h1{
 .icon-Téléphone, .icon-Email, .icon-Adresse {
   width: 2rem;
   margin-right: 5px;
+  transition: .5s ease-in-out;
+}
+.icon-Téléphone:hover, .icon-Email:hover, .icon-Adresse:hover {
+  transform: rotate(360deg);
 }
 
 .phone-contenu{
@@ -551,10 +514,10 @@ h1{
   transition: 0.2s ease-in-out;
   
 }
-.MeContacter:hover {
+/* .MeContacter:hover {
   box-shadow: 0px 8px 5px 2px rgb(0, 0, 0, 0.3);
   transform: scale(1.01);
-}
+} */
 
 .contenuInput{
 margin-bottom: 5px;
@@ -580,7 +543,7 @@ margin-bottom: 5px;
   margin-left: 5px;
 }
 
-#nom, #email, #projet, #message:focus{
+#nom:focus, #email:focus, #projet:focus, #message:focus{
   outline: none;
   font-size: 1rem;
   font-family: 'Lato Regular';
@@ -638,21 +601,43 @@ margin-bottom: 5px;
 }
 
 /* -------- basculer vers le haut ------- */
-/* .btnvershaut{
+.btnvershautOn{
   height: 40px;
  
   display: flex;
   position: fixed;
   right: 30px;
   bottom: 30px;
-} */
- /* width: 100px; */
+  opacity: 1;
+  z-index: 5;
+}
+
+.btnvershautOff{
+  height: 40px;
+ 
+  display: flex;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  opacity: 0;
+}
+
+.arrowUp{
+  transition: .5s ease-in-out;
+  opacity: 0.6;
+}
+
+.arrowUp:hover{
+  transform: rotate(360deg);
+}
+
+
 
 
 /* ------------------------------------------------------- Footer ---------------------------------------------------------------- */
 
 .compartiment-footer {
-  margin-top: 200px;
+  margin-top: 100px;
   width: 100%;
   background-color: #023047;
 }
@@ -703,7 +688,12 @@ margin-bottom: 5px;
 
 
 /* ------------------------------------------------------- Taille ecran ---------------------------------------------------------------- */
-
+/* 
+@media screen and (max-width: 1050px) {
+  .premierepage{
+    height: 500px;
+  }
+} */
 @media screen and (max-width: 1200px) {
   .mySwiper{
     width: 90%;
@@ -803,6 +793,7 @@ margin-bottom: 5px;
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
+    height: 650px;
   }
 
   .compartiment-accueil {
@@ -834,12 +825,18 @@ margin-bottom: 5px;
 
   /* ------------------ APROPOS ------------------ */
   .compartiment-apropos{
-    margin-top: 0px;
+    margin-top: 50px;
     width: 85%;
+  }
+
+  .lottie {
+    width: 100px;
   }
 
   .ca-contenu{
     width: 100%;
+    order: -1;
+    margin-bottom: 30px;
   }
   .ca-contenu .phraseApropos{
     text-align: center;
@@ -911,6 +908,12 @@ margin-bottom: 5px;
 
 @media screen and (max-width: 680px) {
 
+  /* --------------ACCUEIL-------------------- */
+  .premierepage{
+    height: 700px;
+  }
+  
+
   /* ----------------COMPETENCE----------------------------- */
   .container-carte{
     grid-template-columns: 1fr;
@@ -974,8 +977,26 @@ margin-bottom: 5px;
     height: 280px;
     
   }
+  /* -----------BTN VERS HAUT----------- */
+  .btnvershautOn{
+    height: 30px;
+   
+    display: flex;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    opacity: 1;
+    z-index: 5;
+  }
 
 }
+
+@media screen and (max-width: 530px) {
+  .premierepage{
+    height: 750px;
+  }
+}
+
 
 
 @media screen and (max-width: 450px) {
@@ -993,6 +1014,13 @@ margin-bottom: 5px;
 
   /* -----------------APROPOS ------------- */
 
+  .premierepage{
+    height: 770px;
+  }
+
+  .compartiment-apropos{
+    margin-top: 0;
+  }
   .ca-contenu .phraseApropos{
     text-align: center;
     color: #343a40;

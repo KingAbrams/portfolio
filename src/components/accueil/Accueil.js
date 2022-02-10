@@ -10,10 +10,7 @@ function Accueil() {
       <div className='compartiment-accueil'>
           <PartieTexte />
           <PartiePhoto />
-          
       </div>
-      
-      
     </>
   );
 }

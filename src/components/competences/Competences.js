@@ -3,9 +3,45 @@ import Carte from './Carte';
 import chevron from '../../icon/chevron.svg'
 import plume from '../../icon/plume.svg'
 import server from '../../icon/server.svg'
+// import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 
+import {gsap, Power3} from 'gsap'
+import {ScrollTrigger} from 'gsap/ScrollTrigger'
+import {ScrollToPlugin} from 'gsap/ScrollToPlugin'
+
+
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
+
+const slideInTop =(elem, delay, duration) => {
+  gsap.fromTo(
+    elem,
+    {
+      opacity:0,
+      y:50
+    },
+    {
+      y:15,
+      opacity: 1,
+      ease: Power3.easeIn, delay:0.15,
+      scrollTrigger :{
+        trigger: elem,
+        start: 'top 90%',
+        // end:"bottom 100%",
+        // markers:true,
+        toggleActions: 'restart'
+      }
+    },
+  );
+}
 
 function Competences() {
+
+
+  useEffect(() => {
+    slideInTop("#competence");
+  
+  }, []);
 
   const frontEnd = [ 
     {nom: "Html", pourcentage:"90%" },

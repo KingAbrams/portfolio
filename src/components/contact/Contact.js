@@ -1,17 +1,43 @@
 import MyInfo from "./MyInfo";
 import MeContacter from "./MeContacter";
 import TitreH1 from "../TitreH1";
-import arrowUp from '../../icon/up-arrow.png'
+
+import { useEffect } from 'react';
+
+import {gsap, Power3} from 'gsap'
+import {ScrollTrigger} from 'gsap/ScrollTrigger'
+import {ScrollToPlugin} from 'gsap/ScrollToPlugin'
+
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
+
+const slideInTop =(elem, delay, duration) => {
+  gsap.fromTo(
+    elem,
+    {
+      opacity:0,
+      y:50
+    },
+    {
+      y:15,
+      opacity: 1,
+      ease: Power3.easeIn, delay:0.15,
+      scrollTrigger :{
+        trigger: elem,
+        start: 'top 90%',
+        // end:"bottom 100%",
+        // markers:true,
+        toggleActions: 'restart'
+      }
+    },
+  );
+}
 
 function Contact() {
 
-  function basculerTop() {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth"
-    })
-  }
+  useEffect(() => {
+    slideInTop("#contact");
+  
+  }, []);
 
   return (
     <div className="comp-contact" id="contact">

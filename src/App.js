@@ -9,6 +9,8 @@ import Realisation from './components/realisations/Realisation';
 import Contact from './components/contact/Contact';
 import Footer from './components/bottombar/Footer';
 
+import ScrollToTop from './components/ScrollToTop';
+
 
 
 function App() {
@@ -16,17 +18,18 @@ function App() {
   return (
 
     <div className="App">
+        <div className='test'>
         <div className='premierepage'>
-          {/* <img src={courbe} alt="courbe" className='fond-curvy' /> */}
           <Header />
           <Accueil />
+        </div>
         </div>
         <Apropos />
         <Competences />
         <Realisation />
         <Contact />
         <Footer />
-        
+        <ScrollToTop />
     </div>
 
   );

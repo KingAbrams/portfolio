@@ -24,17 +24,12 @@ function Realisation() {
             navigation={true} modules={[Pagination, Navigation]} className="mySwiper" >
             <SwiperSlide>
               <div className="cadre">
-                <Cadre />
+                <Cadre projet="gestion-menage" />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="cadre">
-                <Cadre />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="cadre">
-                <Cadre />
+                <Cadre projet="gestion-materielInfo" />
               </div>
             </SwiperSlide>
           </Swiper>
