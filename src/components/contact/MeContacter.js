@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 
 function MeContacter() {
 
-    const { register,handleSubmit, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
     const onError = (errors, e) => {
         toast.error('Veuillez remplir tous les champs')
     }
@@ -20,13 +20,12 @@ function MeContacter() {
             'user_zEQ8jgknRk347hJBGDLzP'
         ).then(res => {
             toast.success('Message envoyé')
-            }
+            },
         ).catch(err => {
             toast.warn('Probleme de connexion')
             }
         );  
     } 
-        
         
   return (
       

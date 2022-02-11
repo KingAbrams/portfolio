@@ -4,8 +4,31 @@ import {BrowserRouter,Link} from 'react-router-dom'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import { useEffect} from 'react';
+
+import {gsap} from 'gsap'
+
+const slideInBottom =() => {
+
+  gsap.fromTo(
+    '.slideBottom',
+    {
+      opacity:0,
+      y:30
+    },
+    {
+      opacity : 1,
+      y: 0,
+    }, 1
+  )
+}
+
 
 function Button({nom , btnEnvoyer, notif}) {
+  useEffect(() => {
+    slideInBottom();
+  
+  }, []);
 
   const notifyCv = () => toast.info("CV téléchargé!");
 
@@ -38,7 +61,7 @@ function Button({nom , btnEnvoyer, notif}) {
   else{
     return (
       <a href="#contact" >
-        <button className='btn-envoyer'>
+        <button className='btn-envoyer slideBottom'>
             <div className={`btn-btn-envoyer`}>
               <p>{nom}</p>
               <img src={btnEnvoyer} className='img-btn' alt="boutonEnvoyer" />

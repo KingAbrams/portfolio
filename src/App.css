@@ -688,12 +688,24 @@ margin-bottom: 5px;
 
 
 /* ------------------------------------------------------- Taille ecran ---------------------------------------------------------------- */
-/* 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 2200px) {
   .premierepage{
     height: 500px;
+    
   }
-} */
+  .compartiment-accueil{
+    width: 70%;
+  }
+} 
+@media screen and (max-width: 1610px) {
+  .premierepage{
+    height: 700px;
+    
+  }
+  .compartiment-accueil{
+    width: 85%;
+  }
+} 
 @media screen and (max-width: 1200px) {
   .mySwiper{
     width: 90%;

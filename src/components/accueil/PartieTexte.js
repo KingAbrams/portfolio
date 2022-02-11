@@ -2,6 +2,8 @@ import React from 'react';
 import Button from '../Button';
 import boutonEnvoyer from '../../icon/bouton-envoyer.svg';
 
+// import Typewriter from 'typewriter-effect';
+
 import { useEffect} from 'react';
 
 import {gsap} from 'gsap'
@@ -17,7 +19,7 @@ const slideInTop =() => {
     {
       opacity : 1,
       y: 0,
-    }
+    }, 0.5
   )
 
   gsap.fromTo(
@@ -29,12 +31,42 @@ const slideInTop =() => {
     {
       opacity : 1,
       x: 0,
-      delay: 0.1,
-      stagger: 0.05
-    }, 0.3
+      delay: 0.2,
+      stagger: 0.11
+    }, 0.7
+  )
+
+  gsap.fromTo(
+    '.introAccueil',
+    {
+      opacity:0,
+      x:-20
+    },
+    {
+      opacity : 1,
+      x: 0,
+      delay: 0.3,
+    }, 0.8
   )
   
 }
+// const txtAnim = document.querySelector('h1.loopword');
+        
+// new Typewriter(txtAnim, {
+//     autoStart : true,
+//     deleteSpeed: 20
+// })
+
+// .changeDelay(50)
+// .typeString("Hey, moi c'est Hannael")
+// .pauseFor(2000)
+// // .typeString('<strong>, Mande izio ah</strong>')
+// // .pauseFor(1000)
+// .deleteChars(7)
+// .typeString('Abrams')
+// .pauseFor(2000)
+// .deleteChars(6)
+// .start()
 
 
 function PartieTexte() {
@@ -43,25 +75,7 @@ function PartieTexte() {
     slideInTop();
   
   }, []);
-
-  // const txtAnim = document.querySelector('h1.loopword');
-        
-        // new Typewriter(txtAnim, {
-        //     autoStart : true,
-        //     deleteSpeed: 20
-        // })
-
-        // .changeDelay(50)
-        // .typeString("Hey, moi c'est Hannael")
-        // .pauseFor(2000)
-        // // .typeString('<strong>, Mande izio ah</strong>')
-        // // .pauseFor(1000)
-        // .deleteChars(7)
-        // .typeString('Abrams')
-        // .pauseFor(2000)
-        // .deleteChars(6)
-        // .start()
-
+  
   return (
     <div className="accueil-left">
       <h1 className='loopword'>Hey, moi c'est Hannael</h1>
@@ -90,9 +104,8 @@ function PartieTexte() {
       </h4>
 
         {/* Développeur Fullstack</h4> */}
-      <p className='introAccueil'><span className='niveau'>Jeune étudiant</span> passionné par le développement Web,
-        Jeune étudiant passionné par le développement Web,
-        Jeune étudiant passionné par le développement Web
+      <p className='introAccueil'><span className='niveau'>Jeune étudiant</span> passionné par le développement Web.
+      <span className='niveau'> Concevoir et coder</span> c'est ce qui m'anime le plus, mélangeons cela avec <span className='niveau'>l'Art et la Manière</span> d'un numero #10.
       </p>
       <Button nom="Contactez-moi" btnEnvoyer={boutonEnvoyer} />
     </div>
